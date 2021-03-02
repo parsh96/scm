@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git branch: 'main', credentialsId: 'ffcc93cd-32bf-47d1-b25b-aa7864b69a1b', url: 'https://github.com/parsh96/terraform-cloud.git'
+                git branch: 'main', credentialsId: 'ffcc93cd-32bf-47d1-b25b-aa7864b69a1b', url: 'params.giturl'
             }
         }
         stage('Test') {
